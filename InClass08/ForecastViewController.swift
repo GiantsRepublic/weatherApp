@@ -57,7 +57,7 @@ class ForecastViewController: UIViewController, UITableViewDataSource, UITableVi
                 let imageData = try? Data(contentsOf: iconUrl!)
 //                var image: UIImage
                 if let iData = imageData {
-                    var image = UIImage(data: iData)!
+                    let image = UIImage(data: iData)!
 //                    print(image)
                     //append data received to dataList
                     self.dataList.append([time, temp, tempMax, tempMin, humidity, desc, image])
@@ -85,7 +85,7 @@ class ForecastViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.descLabel.text = "\(dataList[indexPath.row][5])"
         
         //icon display
-        cell.icon.image = dataList[indexPath.row][6] as! UIImage
+        cell.icon.image = (dataList[indexPath.row][6] as! UIImage)
         
         return cell
     }
