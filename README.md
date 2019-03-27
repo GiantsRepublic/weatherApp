@@ -11,7 +11,35 @@ Since **Cocoapods** is used in this project, do not open this project as you nor
 3. In the project directory, double click InClass08.**xcworkspace**
 
 ## Library used
-The only external library that I used is AlamoFire. You can check detailed information at *https://github.com/Alamofire/Alamofire*
+The only external library that I used is **AlamoFire**. You can check detailed information at *https://github.com/Alamofire/Alamofire*
+
+### Installing AlamoFire
+**Make sure you have Cocoapods installed on your computer, if not, see instruction below**
+1. Go to your project directory in the terminal and do: 
+```
+#This shouldn't take long. Several files will be created in your project folder. 
+$ pod init
+```
+2. Open **Podfile** using vim or any text editor of your choice
+3. Before "end" add
+```
+#This is the newest version if Alamofire in the time of making this instruction, check their website for updates. 
+pod 'Alamofire', '~> 5.0.0-beta.3'
+```
+save and close Podfile
+4. In the project root directory, use command
+```
+#This can take a while to install
+$ pod install
+```
+5. The Alamofire library should be successfully installed
+
+After installing **AlamoFire**, open **Info.plist** in Xcode: 
+1. Add **NSAppTransportSecurity** field at the bottom
+2. In the field you just added, add another boolean field **NSAllowsArbitraryLoads** and the value to true
+This allows your app to communicate with an external server.
+**This step has already been done in this particular project, but worth knowing for future projects**
+
 
 ## Pod
 You will need to have **Cocoapods** installed on you computer in order to use this porject. 
