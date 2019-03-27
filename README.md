@@ -16,19 +16,20 @@ The only external library that I used is **AlamoFire**. You can check detailed i
 ### Installing AlamoFire
 **Make sure you have Cocoapods installed on your computer, if not, see instruction below**
 1. Go to your project directory in the terminal and do: 
-```
+```console
 #This shouldn't take long. Several files will be created in your project folder. 
 $ pod init
 ```
 2. Open **Podfile** using vim or any text editor of your choice
 3. Before "end" add
-```
-#This is the newest version if Alamofire in the time of making this instruction, check their website for updates. 
+```podfile
+#This is the newest version if Alamofire in the time of making this instruction
+#check their website for updates. 
 pod 'Alamofire', '~> 5.0.0-beta.3'
 ```
 save and close Podfile
 4. In the project root directory, use command
-```
+```console
 #This can take a while to install
 $ pod install
 ```
@@ -42,11 +43,11 @@ This allows your app to communicate with an external server.
 
 
 ## Pod
-You will need to have **Cocoapods** installed on you computer in order to use this porject. 
+You will need to have **Cocoapods** installed on you computer in order to use this project. 
 
 **Instructions**
 ```console
-#to install cocoapods (do not include "$")
+#to install cocoapods
 $ sudo gem install cocoapods
 ```
 
