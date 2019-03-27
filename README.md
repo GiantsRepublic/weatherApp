@@ -6,9 +6,9 @@ This app requires you to create an account at *https://openweathermap.org*, plea
 
 ## Instructions
 Since **Cocoapods** is used in this project, do not open this project as you normally would for other projects. 
-Open *Xcode*
-Click *Open another project...* under the project list
-In the project directory, double click InClass08.**xcworkspace**
+1. Open *Xcode*
+2. Click *Open another project...* under the project list
+3. In the project directory, double click InClass08.**xcworkspace**
 
 ## Library used
 The only external library that I used is AlamoFire. You can check detailed information at *https://github.com/Alamofire/Alamofire*
